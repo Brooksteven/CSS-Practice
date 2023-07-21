@@ -1,0 +1,8 @@
+p {
+    color: red;
+}
+
+/*due specificity the color of p will be blue instead of red because css targets the last property because it comes afterwards so the last p has more specificty.*/
+p {
+    color: blue;
+}
