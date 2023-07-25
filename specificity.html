@@ -10,9 +10,34 @@
     <link rel="stylesheet" href="./specificity.css" />
   </head>
   <body>
-    <!--classes help target exactly what we want to change-->
-   <p id="title" class="red">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita voluptas exercitationem saepe aliquid! Accusantium temporibus sunt ipsa veritatis odio.</p>
-   <p id="" class="red">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita voluptas exercitationem saepe aliquid! Accusantium temporibus sunt ipsa veritatis odio.</p>
-  <p id="sub-title" class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, enim.</p>
-</body>
+    <section id="home">
+      <h1>Home</h1>
+      <!--classes help target exactly what we want to change-->
+      <p id="title" class="red">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+        expedita voluptas exercitationem saepe aliquid! Accusantium temporibus
+        sunt ipsa veritatis odio.
+      </p>
+      <!--for the href value list either a link or an id-->
+      <a href="#info">Go to info</a>
+    </section>
+    <section id="info">
+      <h1>Info</h1>
+      <p id="" class="red">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+        expedita voluptas exercitationem saepe aliquid! Accusantium temporibus
+        sunt ipsa veritatis odio.
+      </p>
+      <!--This is an anchor that allows you to bounce around a page or to a different page. Anchor supports links.-->
+      <a href="#footer">Go to footer</a>
+    </section>
+    <section id="footer">
+      <h1>Footer</h1>
+      <p id="sub-title" class="blue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+        enim.
+      </p>
+      <a href="#home">Go to home</a>
+    </section>
+  </body>
 </html>
