@@ -7,8 +7,21 @@
     color: blue;
 }
 
-/** classes have more weight than html tags */
+/** classes have more weight than html tags so the color will remain what it was before listing this p */
 
 P {
     color: green
+}
+
+/** id holds more weight than classes and html tags **/
+
+#title {
+    font-weight: bold;
+    color: purple;
+}
+
+/** due to specificity the color of the id for title will be blue instead of purple because css targets the last property because it comes afterwards so the last submission for the same id will be the properties to show. **/
+/** you can write more than one id for the samething but just not in the html. For example, you can list the same id multiple times in css but you cant have two of the same id's in your html. **/
+#title {
+    color: blue;
 }
