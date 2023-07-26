@@ -1,20 +1,28 @@
+/**
 .red {
     color: red;
 }
 
-/*due specificity the color of p will be blue instead of red because css targets the last property because it comes afterwards so the last p has more specificty.*/
-.blue {
+/*due specificity the color of p will be blue instead of red because css targets the last property because it comes afterwards so the last p has more specificty, but you don't wamt to do this.*/
+/**
+p.blue {
     color: blue;
 }
 
-/** classes have more weight than html tags so the color will remain what it was before listing this p */
+/**even the the class blue comes after p.blue, p.blue will have more specificity because it's more specific to the class blue because you pur the p infront of it.**/
+/**
+.blue {
+    color: black;
+}
 
+/** classes have more weight than html tags so the color will remain what it was before listing this p */
+/**
 P {
     color: green
 }
 
 /** id holds more weight than classes and html tags **/
-
+/**
 #title {
     font-weight: bold;
     color: purple;
@@ -22,12 +30,55 @@ P {
 
 /** due to specificity the color of the id for title will be blue instead of purple because css targets the last property because it comes afterwards so the last submission for the same id will be the properties to show. **/
 /** you can write more than one id for the samething but just not in the html. For example, you can list the same id multiple times in css but you cant have two of the same id's in your html. **/
+/**
 #title {
     color: blue;
 }
+
+
+
+/** THE ORDER OF SPECIFICITY 
 
 /** target section **/
 section {
     height: 80vh;
     border: 1px solid black;
 }
+
+p {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+/* this has more specificity the just .red 
+p.red {
+    color: purple;
+}
+
+
+/** target multiple classes on the same element by putting a . infront of the class, you dont need a space in css to represent two classes for one property**/
+/*
+.heading.red {
+    color: blue;
+}
+
+/** id weighs heavier than everything **/
+#title {
+    color: black;
+} 
+
+/*the only thing that has more specificity is an id combined with classes */
+/*
+#title.heading.red {
+    color:blue
+}
+
+/* WHAT HAS THE MOST SPECIFICITY OVER EVERYTHING IS ANY CLASS OR ID BUT WITH THE TEXT !IMPORTANT WITH IT */
+/* try to avoid using !important but it trumps and overides everything */
+p {
+    color: blue !important;
+}
+
