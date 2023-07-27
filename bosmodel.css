@@ -1,0 +1,10 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 15px solid red;
+    /* padding and margin need 4 values. Example: padding: 15px 15px 15px 15px. This represents top, right, bottom, and left; however if all the 4 values are the same then you only have to mention the value once and that one value will represent all 4 values. */
+    padding: 15px;
+    margin: 15px; 
+    box-sizing: border-box ;
+}
