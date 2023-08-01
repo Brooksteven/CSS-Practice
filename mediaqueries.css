@@ -1,0 +1,26 @@
+div {
+    background-color: red;
+    color: white;
+    font-size: 24px;
+}
+
+
+/* make it a habit to put @media queries in decreasing order to make it easier to read. */
+/* you can put other elements inside the query like p {}, etc */
+@media (max-width: 992px) {
+    div {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    div {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    div {
+        font-size: 16px;
+    }
+}
