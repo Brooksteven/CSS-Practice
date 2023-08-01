@@ -1,0 +1,32 @@
+/* this is how you access a pseudo element in css for before and after */
+/* this is a pseudo element and we can access it by using two semi-colons like how you see below*/
+div::after {
+    content: " Frontend Simplified "
+}
+
+/* you can also make this content go before the "Welcome to" by doing this
+div::before {
+    content: " Frontend Simplified "
+}
+
+now the Frontend Simplified will be before. You can play around with it. */
+/* to get the transition color to not only trasition in but to also transition out then you need to put the transition in the parent div instead of the div with the pseudo class (div:hover) */
+/*this is the parent div where you put the transition*/
+div {
+    transition: background-color 300ms;
+}
+
+/* this is a pseudo class. You access a pseudo class by only using one semi-colon instead of two like how we used to access the pseudo element. */
+/* the difference between pseudo classes and pseudo elements is that we dont need to fill in a content. We treat this as a normal css tag */
+div:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*this is the parent where you put the transition */
+button {
+    transition: all 300ms; 
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
