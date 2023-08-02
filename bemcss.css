@@ -1,7 +1,9 @@
+/* default nav link */
 .nav__link {
     color: black;
 }
 
+/*when active it will appear bold and purple */
 .nav__link--active {
     color: purple;
     font-weight: bold;
