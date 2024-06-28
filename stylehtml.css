@@ -7,6 +7,7 @@ div {
     /*when doing a box/shape with words dont hard code height because when the page minimizes*/
     /*can do height in vh or vw. vh is for landing pages. vh stands for viewport height which is % of the height of your screen*/
     /*vw is viewport width which means when you expand the page the height will increase and when you minimize the page, the height of what you're targeting will decrease.*/
+    /*in a real situation, remove this height so the box will stay responsive*/
     height: 100vw;
     border: 1px solid black;
     font-size: 12px;
