@@ -1,9 +1,17 @@
 div {
+    /*don't give width and height in px because this is hard coding which is not dynamic so that means if you minimize and maximize the page the width and height won't adjust and will keep the same size which we don't want that*/
     width: 100%;
+    /*because we don't hard code width the way we can make sure the width doesnt become to big is by creating a max-width. The width won't go bigger than the max-width but can go smaller.
+    THIS MAKES THE PAGE RESPONSIVE*/
     max-width: 200px; 
+    /*when doing a box/shape with words dont hard code height because when the page minimizes*/
+    /*can do height in vh or vw. vh is for landing pages. vh stands for viewport height which is % of the height of your screen*/
+    /*vw is viewport width which means when you expand the page the height will increase and when you minimize the page, the height of what you're targeting will decrease.*/
     height: 100vw;
     border: 1px solid black;
     font-size: 12px;
     font-weight: 100;
+    /*We add a fall back font "sans-serif" because not every browser supports robotog*/
     font-family: "Roboto", sans-serif;
+
 }
