@@ -1,4 +1,10 @@
 h1 {
-    color: red;
+    background-color: red;
+    /*WAYS TO CHANGE COLOR*/
+    /*color: rgb(0, 0, 0);*/
+    /*color: #000; (this is hex)*/
+    /*color: red;*/
+    /*color: rgba(0, 0, 0, 0.8);*/
+/*the "a" in rgba stands for oppacity (oppacity says how light or dark you want the text) and is the fourth number in the paranthesis "0.5"*/    
 }
- 
+
